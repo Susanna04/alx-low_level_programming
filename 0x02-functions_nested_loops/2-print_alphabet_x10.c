@@ -3,7 +3,7 @@
  * print_alphabet_x10 - check the code.
  */
 
- void print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
 	char i;
 	int j;
@@ -13,7 +13,7 @@
 		for (i = 'a'; i <= 'z'; i++)
 		{
 			_putchar(i);
-			_putchar('\n');
+
 		}
-	}
+	} _putchar('\n');
 }
