@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - entry code
@@ -11,7 +12,7 @@ int main(void)
 {
 	int a;
 
-	for (a = 0; a <= 100; a++)
+	for (a = 1; a <= 100; a++)
 	{
 		if (a % 15 == 0)
 			printf("FizzBuzz");
@@ -21,7 +22,7 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%i", a);
-		if (i < 100)
+		if (a < 100)
 			printf(" ");
 	}
 	printf("\n");
