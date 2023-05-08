@@ -23,6 +23,9 @@ unsigned int _strspn(char *s, char *accept)
 				result = 1;
 			}
 		}
-	}
 
+	if (result == 0)
+		return(x);
+	}
+	return (0);
 }
