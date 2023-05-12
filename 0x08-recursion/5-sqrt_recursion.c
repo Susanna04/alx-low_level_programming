@@ -25,7 +25,7 @@ int _sqrt(int i, int n)
 {
 	int sqrt = i * i;
 
-	if (sqrt > n)
+	if (sqrt <  n)
 		return (-1);
 
 	if (sqrt == n)
