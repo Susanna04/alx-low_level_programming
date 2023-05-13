@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
   * _atoi - converts a string to an integer
-  *@s: string
+  * @s: string
   * Return: int converted from the string
   */
 
@@ -21,10 +20,12 @@ int _atoi(char *s)
 
 	while (s[length] != '\0')
 		length++;
+
 	while (i < length && f == 0)
 	{
 		if (s[i] == '-')
 			++j;
+
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			dig = s[i] - '0';
@@ -32,7 +33,7 @@ int _atoi(char *s)
 				dig = -dig;
 			k = k * 10 + dig;
 			f = 1;
-			if (s[i + 1] < '0' || s[i + 9] > '9')
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 			f = 0;
 		}
